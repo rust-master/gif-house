@@ -34,16 +34,21 @@ describe("gifproject", () => {
   });
 
   it("add gif", async () => {
-    await program.rpc.addGif({
-      accounts: {
-        baseAccount: baseAccount.publicKey,
-      },
-    });
+    await program.rpc.addGif(
+      "https://media3.giphy.com/media/Sw6G80NHeUEP4k5N0g/giphy.gif",
+      {
+        accounts: {
+          baseAccount: baseAccount.publicKey,
+          user: provider.wallet.publicKey,
+        },
+      }
+    );
 
     // Get the account again to see what changed.
     let account = await program.account.baseAccount.fetch(
       baseAccount.publicKey
     );
     console.log("👀 GIF Count", account.totalGifs.toString());
+    console.log("👀 GIF List", account.gifList);
   });
 });
