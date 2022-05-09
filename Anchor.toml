@@ -1,7 +1,7 @@
 [features]
 seeds = false
 [programs.localnet]
-gifproject = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+gifproject = "moVEyHNEpBWAyqYssYR8MBjtSdaWutU6igYrrKJiikA"
 
 [registry]
 url = "https://anchor.projectserum.com"

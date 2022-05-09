@@ -8,9 +8,9 @@ describe("gifproject", () => {
 
   const program = anchor.workspace.Gifproject as Program<Gifproject>;
 
-  it("Is initialized!", async () => {
-    // Add your test here.
-    const tx = await program.methods.initialize().rpc();
-    console.log("Your transaction signature", tx);
+  it("startStuffOff!", async () => {
+    console.log("🚀 Starting test...");
+    const tx = await program.methods.startStuffOff().rpc();
+    console.log("📝 Your transaction signature", tx);
   });
 });
