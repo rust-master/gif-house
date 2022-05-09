@@ -1,7 +1,8 @@
 .App {
   height: 100vh;
-  background-color: #1a202c;
-  overflow: scroll;
+  /* background-color: #1a202c; */
+  background-image: linear-gradient(#45d31e, #0c5875, #042045);
+  /* overflow: scroll; */
   overflow-x: hidden;
   text-align: center;
 }
@@ -107,7 +108,7 @@
 
 .gif-item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   object-fit: cover;
 }
