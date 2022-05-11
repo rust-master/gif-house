@@ -172,6 +172,7 @@ const App = () => {
   const sendGif = async () => {
     if (inputValue.length === 0) {
       console.log("No gif link given!")
+      alert("No gif link given!")
       return
     }
     setInputValue('');
